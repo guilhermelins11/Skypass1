@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SkyPass</string>
+    <string name="nome_completo">Nome Completo</string>
+    <string name="senha">Senha</string>
+    <string name="login">Login</string>
+    <string name="entre_para_continuar_nse_nao_tiver_login">Entre para continuar. \nSe nao tiver login,</string>
+    <string name="cadastre_se_aqui">Cadastre-se Aqui</string>
+</resources>

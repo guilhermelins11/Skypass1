@@ -1,0 +1,110 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/bgImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_fundo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/loginContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.85">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cadastre-se"
+            android:textAlignment="center"
+            android:textColor="#603893"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="30dp"
+            android:shadowColor="#FF000000"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="8" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clique aqui se ja tiver Login."
+            android:textAlignment="textEnd"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+
+        <EditText
+            android:id="@+id/editNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:hint="Escreva Seu nome"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#CCCCCC"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:hint="Escreva Seu E-mail"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#CCCCCC"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/editSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#FFFFFF"
+            android:hint="Escreva sua Senha"
+            android:inputType="textPassword"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#CCCCCC" />
+
+        <EditText
+            android:id="@+id/editConfirmSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:hint="COnfirme sua Senha"
+            android:inputType="textPassword"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#CCCCCC"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/btnCadastro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#D3C8C8"
+            android:text="CONFIRMAR"
+            android:textAllCaps="false"
+            android:textColor="#443074"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
